@@ -31,9 +31,9 @@ public class GrimoireManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        indexButtonInput = 0;
+        /*indexButtonInput = 0;
         pageG.GetComponent<SpriteRenderer>().sprite = pagesImcompleteSprite[indexPageI];
-        pageD.GetComponent<SpriteRenderer>().sprite = pagesImcompleteSprite[indexPageI+1];
+        pageD.GetComponent<SpriteRenderer>().sprite = pagesImcompleteSprite[indexPageI+1];*/
     }
 
     // Update is called once per frame
@@ -44,7 +44,7 @@ public class GrimoireManager : MonoBehaviour
             Grimoire.SetActive(!Grimoire.activeSelf);
         }
 
-        if(indexButtonInput > 3)
+        /*if(indexButtonInput > 3)
         {
             indexButtonInput = 3;
         }
@@ -52,10 +52,10 @@ public class GrimoireManager : MonoBehaviour
         if (indexButtonInput < 0)
         {
             indexButtonInput = 0;
-        }
+        }*/
     }
 
-    public void NextPage()
+    /*public void NextPage()
     {
         indexButtonInput++;
     }
@@ -68,5 +68,5 @@ public class GrimoireManager : MonoBehaviour
     private void ModifPage()
     {
 
-    }
+    }*/
 }
