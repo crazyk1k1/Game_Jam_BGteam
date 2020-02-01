@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fire
   - word
+  - Target
+  - Verb
   layers:
   - Default
   - TransparentFX
