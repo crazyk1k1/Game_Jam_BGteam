@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/UIGrimoire_Scene.unity
-=======
-- path: Assets/Scenes/Area51_LD_v1.unity
->>>>>>> 7823161cccfce21295f3bce018d24358649a2c53
+- path: Assets/Scenes/SUICIDE.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
