@@ -235,14 +235,8 @@ MonoBehaviour:
   pageG: {fileID: 907724207}
   pageD: {fileID: 2034155103}
   Grimoire: {fileID: 707526617}
-  BatonG: {fileID: 11400000, guid: 1b29d6231c87aa64ea83b0f9b7377604, type: 2}
-  BatonD: {fileID: 11400000, guid: d1f2f2dcfe01b90478ac50893f9fce54, type: 2}
-  StoneG: {fileID: 11400000, guid: cd274a9b73038b740aa43ca375765ab1, type: 2}
-  StoneD: {fileID: 11400000, guid: b6b1f10bb677d064bbf6e9045708af40, type: 2}
-  MaisonG: {fileID: 11400000, guid: bf7d6dcc8df62e34ab69ef840fbbf886, type: 2}
-  MaisonD: {fileID: 11400000, guid: feafb0603884a414eb262a200d7a8e1a, type: 2}
-  RituelG: {fileID: 11400000, guid: 63ee8b879c1665d4e8ed12c6ba29415c, type: 2}
-  RituelD: {fileID: 11400000, guid: c5c568d5235a67345bf73e92250871c1, type: 2}
+  pagesImcompleteSprite: []
+  pagesCompleteSprite: []
 --- !u!1 &432740528
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &707526618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -513,6 +507,7 @@ GameObject:
   - component: {fileID: 907724210}
   - component: {fileID: 907724209}
   - component: {fileID: 907724212}
+  - component: {fileID: 907724211}
   m_Layer: 5
   m_Name: PageG
   m_TagString: Untagged
@@ -575,6 +570,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907724207}
   m_CullTransparentMesh: 0
+--- !u!114 &907724211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907724207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11e7854998352e428f72278cab7ec71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 0}
+  Response:
+    m_PersistentCalls:
+      m_Calls: []
+  eventDescription: 
 --- !u!114 &907724212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,12 +599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff06a7bd4d496d4591c3000aa6a3e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listPage:
-  - {fileID: 11400000, guid: 1b29d6231c87aa64ea83b0f9b7377604, type: 2}
-  - {fileID: 11400000, guid: cd274a9b73038b740aa43ca375765ab1, type: 2}
-  - {fileID: 11400000, guid: bf7d6dcc8df62e34ab69ef840fbbf886, type: 2}
-  - {fileID: 11400000, guid: 63ee8b879c1665d4e8ed12c6ba29415c, type: 2}
-  Page: {fileID: 0}
 --- !u!1 &1107485027
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,12 +835,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d96433746bb2cef4385eb5809be6918d, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -863,6 +869,7 @@ GameObject:
   - component: {fileID: 2034155104}
   - component: {fileID: 2034155106}
   - component: {fileID: 2034155105}
+  - component: {fileID: 2034155108}
   - component: {fileID: 2034155107}
   m_Layer: 5
   m_Name: PageD
@@ -938,12 +945,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff06a7bd4d496d4591c3000aa6a3e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  listPage:
-  - {fileID: 11400000, guid: d1f2f2dcfe01b90478ac50893f9fce54, type: 2}
-  - {fileID: 11400000, guid: b6b1f10bb677d064bbf6e9045708af40, type: 2}
-  - {fileID: 11400000, guid: feafb0603884a414eb262a200d7a8e1a, type: 2}
-  - {fileID: 11400000, guid: c5c568d5235a67345bf73e92250871c1, type: 2}
-  Page: {fileID: 0}
+--- !u!114 &2034155108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034155103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11e7854998352e428f72278cab7ec71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 0}
+  Response:
+    m_PersistentCalls:
+      m_Calls: []
+  eventDescription: 
 --- !u!1 &2098515626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,10 +1079,10 @@ RectTransform:
   m_Father: {fileID: 752534631}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -51.505127}
-  m_SizeDelta: {x: 760, y: 103.010254}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2109319201
 MonoBehaviour:
@@ -1108,18 +1126,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2109319202}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 66850978}
-        m_MethodName: PreviousPage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2109319202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1267,10 +1274,10 @@ RectTransform:
   m_Father: {fileID: 752534631}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1540, y: -51.505127}
-  m_SizeDelta: {x: 760, y: 103.010254}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2147374852
 MonoBehaviour:
@@ -1314,18 +1321,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2147374853}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 66850978}
-        m_MethodName: NextPage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2147374853
 MonoBehaviour:
   m_ObjectHideFlags: 0
