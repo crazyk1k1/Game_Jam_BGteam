@@ -46,13 +46,7 @@ public class WordGrabNShoot : MonoBehaviour
 
             if (handing)
             {
-                GameObject shootedWord = Instantiate(words[0], spawnShoot.position, transform.rotation);
-                shootedWord.GetComponent<Rigidbody>().AddForce(transform.forward * shootForce, ForceMode.Impulse);
-                shootedWord.GetComponent<Rigidbody>().useGravity = true;
-                shootedWord.GetComponent<MeshRenderer>().enabled = true;
-                shootedWord.GetComponent<BoxCollider>().enabled = true;
-                handing = false;
-                //words.Clear();
+                Shoot();
             }
         }
 
@@ -72,7 +66,19 @@ public class WordGrabNShoot : MonoBehaviour
             words[0].GetComponent<MeshRenderer>().enabled = false;
             words[0].GetComponent<BoxCollider>().enabled = false;
             handing = true;
+            isMoving = false;
         }
+    }
+
+    public void Shoot()
+    {
+        GameObject shootedWord = Instantiate(words[0], spawnShoot.position, transform.rotation);
+        shootedWord.GetComponent<Rigidbody>().AddForce(transform.forward * shootForce, ForceMode.Impulse);
+        shootedWord.GetComponent<Rigidbody>().useGravity = true;
+        shootedWord.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        shootedWord.GetComponent<MeshRenderer>().enabled = true;
+        shootedWord.GetComponent<BoxCollider>().enabled = true;
+        handing = false;
     }
 
     public void OnTargetHit()
@@ -80,16 +86,25 @@ public class WordGrabNShoot : MonoBehaviour
         if (targetHit)
         {
             words.Clear();
+            targetHit = false;
         }
 
         if (resetWord)
         {
-            words[0].GetComponent<Rigidbody>().useGravity = false;
-            words[0].GetComponent<MeshRenderer>().enabled = true;
-            words[0].GetComponent<BoxCollider>().enabled = true;
-            //words[0].transform.position = 
             int i;
-            //for(i)
+            for(i = 0; i < globalWords.Count ; i++)
+            {
+                if(words[0] == globalWords[i])
+                {
+                    words[0].transform.position = spawnWords[0].position;
+                    words[0].GetComponent<Rigidbody>().useGravity = false;
+                    words[0].GetComponent<MeshRenderer>().enabled = true;
+                    words[0].GetComponent<BoxCollider>().enabled = true;
+                }
+            }
+            words.Clear();
+            handing = false;
+            resetWord = false;
         }
     }
 
