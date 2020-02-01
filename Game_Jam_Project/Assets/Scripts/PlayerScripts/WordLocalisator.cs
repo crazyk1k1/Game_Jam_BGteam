@@ -7,6 +7,7 @@ public class WordLocalisator : MonoBehaviour
 
     public KeyCode outlineKey;
     public GameObject[] word;
+    public GameObject[] verb;
     public float TimeOutline;
 
     // Start is called before the first frame update
@@ -27,8 +28,14 @@ public class WordLocalisator : MonoBehaviour
     public void outline()
     {
         word = GameObject.FindGameObjectsWithTag("word");
+        verb = GameObject.FindGameObjectsWithTag("Verb");
 
-        foreach(GameObject go in word)
+        foreach (GameObject go in word)
+        {
+            go.GetComponent<Outline>().enabled = true;
+        }
+
+        foreach (GameObject go in verb)
         {
             go.GetComponent<Outline>().enabled = true;
         }
@@ -42,6 +49,11 @@ public class WordLocalisator : MonoBehaviour
         yield return new WaitForSeconds(TimeOutline);
 
         foreach (GameObject go in word)
+        {
+            go.GetComponent<Outline>().enabled = false;
+        }
+
+        foreach (GameObject go in verb)
         {
             go.GetComponent<Outline>().enabled = false;
         }

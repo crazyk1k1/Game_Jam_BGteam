@@ -23,16 +23,18 @@ public class WordManager : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Target") && collision.gameObject.GetComponent<TargetManager>().type == type)
+        if (collision.gameObject.CompareTag("Target"))
         {
-            player.GetComponent<WordGrabNShoot>().targetHit = true;
+            Debug.Log("ok");
+            player.GetComponent<WordGrabNShoot>().resetWord = true;
             Destroy(gameObject);
         }
 
         else
         {
-            if(!collision.gameObject.CompareTag("Verb") && !collision.gameObject.CompareTag("word"))
+            if(!collision.gameObject.CompareTag("Verb") && !collision.gameObject.CompareTag("word") && !collision.gameObject.CompareTag("Target"))
             {
+                Debug.Log("pas ok");
                 player.GetComponent<WordGrabNShoot>().resetWord = true;
                 Destroy(gameObject);
             }
@@ -40,6 +42,7 @@ public class WordManager : MonoBehaviour
 
         if (!collision.gameObject.CompareTag("Target") && !collision.gameObject.CompareTag("word") && !collision.gameObject.CompareTag("Verb"))
         {
+            Debug.Log("pas ok 2");
             player.GetComponent<WordGrabNShoot>().resetWord = true;
             Destroy(gameObject);
         }
