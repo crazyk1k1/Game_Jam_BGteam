@@ -5,7 +5,20 @@ using UnityEngine.UI;
 
 public class PageBehaviour : MonoBehaviour
 {
-    public void ActivateVisual()
+    public List<PageData> listPage;
+    
+
+    [SerializeField]
+    PageData Page;
+    
+    public void CurrentObject(int index)
+    {
+        Page = listPage[index];
+    }
+
+    
+}
+/*public void ActivateVisual()
     {
     if (gameObject.GetComponent<Image>() != null)
         {
@@ -21,4 +34,9 @@ public class PageBehaviour : MonoBehaviour
             gameObject.GetComponent<Image>().enabled = false;
         }
     }
-}
+    
+    private void Update()
+    {
+        Page = listPage[];
+    }
+     */

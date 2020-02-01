@@ -235,8 +235,14 @@ MonoBehaviour:
   pageG: {fileID: 907724207}
   pageD: {fileID: 2034155103}
   Grimoire: {fileID: 707526617}
-  pagesImcompleteSprite: []
-  pagesCompleteSprite: []
+  BatonG: {fileID: 11400000, guid: 75c24c8893f27a44c996b02090a91e68, type: 2}
+  BatonD: {fileID: 11400000, guid: e200f42f72423024384c769c2d52fea8, type: 2}
+  StoneG: {fileID: 11400000, guid: 178b67b6df661bb4487ac95f3ebef752, type: 2}
+  StoneD: {fileID: 11400000, guid: 99dacd217efbcbb48a01a76623164209, type: 2}
+  MaisonG: {fileID: 11400000, guid: f7a372ea835e1734780c3e4a20cb0684, type: 2}
+  MaisonD: {fileID: 11400000, guid: 3062c7719b9339f459df285c1774fe20, type: 2}
+  RituelG: {fileID: 11400000, guid: 9f03fe81df9230942a231cbfe8d4e9b0, type: 2}
+  RituelD: {fileID: 11400000, guid: 2a7fda265d13e804c9b8b1abe9e5f547, type: 2}
 --- !u!1 &432740528
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +513,6 @@ GameObject:
   - component: {fileID: 907724210}
   - component: {fileID: 907724209}
   - component: {fileID: 907724212}
-  - component: {fileID: 907724211}
   m_Layer: 5
   m_Name: PageG
   m_TagString: Untagged
@@ -570,23 +575,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907724207}
   m_CullTransparentMesh: 0
---- !u!114 &907724211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907724207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11e7854998352e428f72278cab7ec71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 0}
-  Response:
-    m_PersistentCalls:
-      m_Calls: []
-  eventDescription: 
 --- !u!114 &907724212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +587,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff06a7bd4d496d4591c3000aa6a3e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  listPage:
+  - {fileID: 11400000, guid: 75c24c8893f27a44c996b02090a91e68, type: 2}
+  - {fileID: 11400000, guid: 178b67b6df661bb4487ac95f3ebef752, type: 2}
+  - {fileID: 11400000, guid: f7a372ea835e1734780c3e4a20cb0684, type: 2}
+  - {fileID: 11400000, guid: 9f03fe81df9230942a231cbfe8d4e9b0, type: 2}
+  Page: {fileID: 0}
 --- !u!1 &1107485027
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +863,6 @@ GameObject:
   - component: {fileID: 2034155104}
   - component: {fileID: 2034155106}
   - component: {fileID: 2034155105}
-  - component: {fileID: 2034155108}
   - component: {fileID: 2034155107}
   m_Layer: 5
   m_Name: PageD
@@ -945,23 +938,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff06a7bd4d496d4591c3000aa6a3e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2034155108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034155103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11e7854998352e428f72278cab7ec71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 0}
-  Response:
-    m_PersistentCalls:
-      m_Calls: []
-  eventDescription: 
+  listPage:
+  - {fileID: 11400000, guid: e200f42f72423024384c769c2d52fea8, type: 2}
+  - {fileID: 11400000, guid: 99dacd217efbcbb48a01a76623164209, type: 2}
+  - {fileID: 11400000, guid: 3062c7719b9339f459df285c1774fe20, type: 2}
+  - {fileID: 11400000, guid: 2a7fda265d13e804c9b8b1abe9e5f547, type: 2}
+  Page: {fileID: 0}
 --- !u!1 &2098515626
 GameObject:
   m_ObjectHideFlags: 0
