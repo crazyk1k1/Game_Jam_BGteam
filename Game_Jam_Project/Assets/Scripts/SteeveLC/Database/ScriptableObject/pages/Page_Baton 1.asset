@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd17ce898c0e03448b0b752ca5a331a, type: 3}
   m_Name: Page_Baton 1
   m_EditorClassIdentifier: 
-  currentImage: {fileID: 0}
+  currentImage: {fileID: 21300000, guid: 18d640165df9fbb47872f49ffff9184e, type: 3}
   images:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 18d640165df9fbb47872f49ffff9184e, type: 3}
+  - {fileID: 21300000, guid: 38f5ce569be2b3f4e8e0af4858663677, type: 3}
   - {fileID: 0}
