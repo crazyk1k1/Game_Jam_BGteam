@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd17ce898c0e03448b0b752ca5a331a, type: 3}
+  m_Name: Baton 1
+  m_EditorClassIdentifier: 
+  currentImage: {fileID: 0}
+  images:
+  - {fileID: 21300000, guid: 08734106f258fd84294f199e0c6bdf35, type: 3}
+  - {fileID: 21300000, guid: 65d0517172eef934f9a80ac2ba566fd3, type: 3}
+  - {fileID: 0}

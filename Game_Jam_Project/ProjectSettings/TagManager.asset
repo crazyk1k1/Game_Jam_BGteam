@@ -6,8 +6,7 @@ TagManager:
   tags:
   - Fire
   - word
-  - Target
-  - Verb
+  - balleSniper
   layers:
   - Default
   - TransparentFX
@@ -17,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - postProcess
   - 
   - 
   - 
