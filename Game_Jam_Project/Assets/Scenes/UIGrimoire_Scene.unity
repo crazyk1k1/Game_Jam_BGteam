@@ -235,9 +235,14 @@ MonoBehaviour:
   pageG: {fileID: 907724207}
   pageD: {fileID: 2034155103}
   Grimoire: {fileID: 707526617}
-  pagesImcompleteSprite: []
-  pagesCompleteSprite: []
-  indexPageI: 0
+  BatonG: {fileID: 11400000, guid: 1b29d6231c87aa64ea83b0f9b7377604, type: 2}
+  BatonD: {fileID: 11400000, guid: d1f2f2dcfe01b90478ac50893f9fce54, type: 2}
+  StoneG: {fileID: 11400000, guid: cd274a9b73038b740aa43ca375765ab1, type: 2}
+  StoneD: {fileID: 11400000, guid: b6b1f10bb677d064bbf6e9045708af40, type: 2}
+  MaisonG: {fileID: 11400000, guid: bf7d6dcc8df62e34ab69ef840fbbf886, type: 2}
+  MaisonD: {fileID: 11400000, guid: feafb0603884a414eb262a200d7a8e1a, type: 2}
+  RituelG: {fileID: 11400000, guid: 63ee8b879c1665d4e8ed12c6ba29415c, type: 2}
+  RituelD: {fileID: 11400000, guid: c5c568d5235a67345bf73e92250871c1, type: 2}
 --- !u!1 &432740528
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +592,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cd274a9b73038b740aa43ca375765ab1, type: 2}
   - {fileID: 11400000, guid: bf7d6dcc8df62e34ab69ef840fbbf886, type: 2}
   - {fileID: 11400000, guid: 63ee8b879c1665d4e8ed12c6ba29415c, type: 2}
+  listPageLength: 0
   Page: {fileID: 0}
 --- !u!1 &1107485027
 GameObject:
@@ -938,6 +944,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b6b1f10bb677d064bbf6e9045708af40, type: 2}
   - {fileID: 11400000, guid: feafb0603884a414eb262a200d7a8e1a, type: 2}
   - {fileID: 11400000, guid: c5c568d5235a67345bf73e92250871c1, type: 2}
+  listPageLength: 0
   Page: {fileID: 0}
 --- !u!1 &2098515626
 GameObject:
