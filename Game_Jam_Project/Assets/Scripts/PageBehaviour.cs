@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PageBehaviour : MonoBehaviour
 {
     public List<PageData> listPage;
-    public int listPageLength;
+    
 
     [SerializeField]
     PageData Page;
@@ -16,11 +16,7 @@ public class PageBehaviour : MonoBehaviour
         Page = listPage[index];
     }
 
-    public void Start()
-    {
-        listPage.Capacity = listPageLength;
-        Debug.Log(listPageLength);
-    }
+    
 }
 /*public void ActivateVisual()
     {

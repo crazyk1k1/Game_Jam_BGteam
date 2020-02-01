@@ -13,5 +13,11 @@ public class PageData : ScriptableObject
     {
         currentImage = images[index];
     }
-    
+
+    public void Awake()
+    {
+        currentImage = images[0];
+    }
+
+
 }   

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GrimoireManager : MonoBehaviour
 {
@@ -20,11 +21,11 @@ public class GrimoireManager : MonoBehaviour
     /*public Sprite[] pagesImcompleteSprite;
     public Sprite[] pagesCompleteSprite;*/
 
-    private int indexPageG;
-    private int indexPageBaton;
-    private int indexPageStone;
-    private int indexPageMaison;
-    private int indexPageRituel;
+    private int indexPageG = 0;
+    private int indexPageBaton = 0;
+    private int indexPageStone = 0;
+    private int indexPageMaison = 0;
+    private int indexPageRituel = 0;
     
 
     public static GrimoireManager s_Singleton;
@@ -56,7 +57,40 @@ public class GrimoireManager : MonoBehaviour
             Grimoire.SetActive(!Grimoire.activeSelf);
         }
 
-        
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            BatonLvPageComplete();
+            Debug.Log("là");
+        }
+
+        if(indexPageG == 0)
+        {
+            BatonLvPageComplete();
+            pageG.GetComponent<Image>().sprite = BatonG.currentImage;
+            pageD.GetComponent<Image>().sprite = BatonD.currentImage;
+        }
+
+        if(indexPageG == 1)
+        {
+            StoneLvPageComplete();
+            pageG.GetComponent<Image>().sprite = StoneG.currentImage;
+            pageD.GetComponent<Image>().sprite = StoneD.currentImage;
+        }
+
+        if(indexPageG == 2)
+        {
+            MaisonLvPageComplete();
+            pageG.GetComponent<Image>().sprite = MaisonG.currentImage;
+            pageD.GetComponent<Image>().sprite = MaisonD.currentImage;
+        }
+
+        if(indexPageG == 3)
+        {
+            RituelLvPageComplete();
+            pageG.GetComponent<Image>().sprite = RituelG.currentImage;
+            pageD.GetComponent<Image>().sprite = RituelD.currentImage;
+        }
+
         /*if(indexButtonInput > 3)
         {
             indexButtonInput = 3;
@@ -71,9 +105,9 @@ public class GrimoireManager : MonoBehaviour
     public void NextPage()
     {
         indexPageG++;
-        if(indexPageG > pageG.GetComponent<PageBehaviour>().listPageLength)
+        if(indexPageG > 3)
         {
-            indexPageG = pageG.GetComponent<PageBehaviour>().listPageLength;
+            indexPageG = 3;
         }
         pageG.GetComponent<PageBehaviour>().CurrentObject(indexPageG);
         pageD.GetComponent<PageBehaviour>().CurrentObject(indexPageG);
@@ -102,6 +136,8 @@ public class GrimoireManager : MonoBehaviour
         }
         BatonG.ChangeImage(indexPageBaton);
         BatonD.ChangeImage(indexPageBaton);
+        pageG.GetComponent<Image>().sprite = BatonG.currentImage;
+        //pageD.GetComponent<Sprite>().Equals(BatonD.currentImage);
     }
 
     public void StoneLvPageComplete()
@@ -112,6 +148,8 @@ public class GrimoireManager : MonoBehaviour
         }
         StoneG.ChangeImage(indexPageStone);
         StoneD.ChangeImage(indexPageStone);
+        //pageG.GetComponent<Sprite>().Equals(StoneG.currentImage);
+        //pageD.GetComponent<Sprite>().Equals(StoneD.currentImage);
     }
 
     public void MaisonLvPageComplete()
@@ -122,6 +160,8 @@ public class GrimoireManager : MonoBehaviour
         }
         MaisonG.ChangeImage(indexPageMaison);
         MaisonD.ChangeImage(indexPageMaison);
+        //pageG.GetComponent<Sprite>().Equals(MaisonG.currentImage);
+        //pageD.GetComponent<Sprite>().Equals(MaisonD.currentImage);
     }
 
     public void RituelLvPageComplete()
@@ -132,5 +172,7 @@ public class GrimoireManager : MonoBehaviour
         }
         RituelG.ChangeImage(indexPageRituel);
         RituelD.ChangeImage(indexPageRituel);
+        //pageG.GetComponent<Sprite>().Equals(RituelG.currentImage);
+        //pageD.GetComponent<Sprite>().Equals(RituelD.currentImage);
     }
 }
