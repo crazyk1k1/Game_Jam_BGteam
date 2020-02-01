@@ -1,6 +1,6 @@
 /target:library
 /nowarn:0169
-/out:Temp/Assembly-CSharp-Editor-firstpass.dll
+/out:Temp/Assembly-CSharp.dll
 /debug:portable
 /optimize-
 /nostdlib+
@@ -68,8 +68,6 @@
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/Managed/UnityEditor.dll"
-/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
 /reference:Library/ScriptAssemblies/Unity.Timeline.Editor.dll
 /reference:Library/ScriptAssemblies/Unity.VSCode.Editor.dll
 /reference:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
@@ -79,11 +77,6 @@
 /reference:Library/ScriptAssemblies/Unity.Rider.Editor.dll
 /reference:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 /reference:Library/ScriptAssemblies/UnityEditor.UI.dll
-/reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
-/reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
-/reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
-/reference:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
-/reference:"D:/Travail perso/projet perso/GamJam/Game_Jam_Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll"
 /reference:"C:/Program Files/Unity/Hub/Editor/2019.2.16f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll"
@@ -274,7 +267,7 @@
 /define:ENABLE_AR
 /define:ENABLE_WEBSOCKET_HOST
 /define:ENABLE_MONO
-/define:NET_4_6
+/define:NET_STANDARD_2_0
 /define:ENABLE_PROFILER
 /define:DEBUG
 /define:TRACE
@@ -297,9 +290,24 @@
 /define:CROSS_PLATFORM_INPUT
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
-"Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs"
-"Assets\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs"
-"Assets\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs"
-"Assets\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs"
-"Assets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs"
-"Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs"
+Assets\QuickOutline\Scripts\Outline.cs
+Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs
+Assets\SampleScenes\Menu\Scripts\PauseMenu.cs
+Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs
+Assets\SampleScenes\Scripts\CameraSwitch.cs
+Assets\SampleScenes\Scripts\LevelReset.cs
+Assets\SampleScenes\Scripts\ParticleSceneControls.cs
+Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs
+Assets\SampleScenes\Scripts\SlowMoButton.cs
+Assets\Scripts\SteeveLC\Core\Data\Enum\ObjectType.cs
+Assets\Scripts\SteeveLC\Core\Data\ScriptableObject\ObjectData.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\DataEvents\DataTransferEvent.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\DataEvents\DataTransferEventListner.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\DataEvents\DataTransferResponse.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\GameEvents\GameEvent.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\GameEvents\GameEventListener.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Object\ObjectBehaviour.cs
+Assets\Scripts\SteeveLC\Engine\GameEventEditor.cs
+Assets\Scripts\WordGrabNShoot.cs
+Assets\Scripts\WordLocalisator.cs
+Assets\Scripts\WordManager.cs

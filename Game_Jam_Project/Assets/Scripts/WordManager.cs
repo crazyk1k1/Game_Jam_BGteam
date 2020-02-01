@@ -18,15 +18,15 @@ public class WordManager : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.name == "Shpere")
+        if (collision.gameObject.name == "Sphere")
         {
             player.GetComponent<WordGrabNShoot>().targetHit = true;
             Destroy(gameObject);
         }
 
-        if (other.name != "Shpere")
+        if (collision.gameObject.name != "Sphere")
         {
             player.GetComponent<WordGrabNShoot>().resetWord = true;
             Destroy(gameObject);

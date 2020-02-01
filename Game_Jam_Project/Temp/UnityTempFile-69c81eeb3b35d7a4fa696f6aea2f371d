@@ -296,5 +296,15 @@ Assets\SampleScenes\Scripts\LevelReset.cs
 Assets\SampleScenes\Scripts\ParticleSceneControls.cs
 Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs
 Assets\SampleScenes\Scripts\SlowMoButton.cs
+Assets\Scripts\SteeveLC\Core\Data\Enum\ObjectType.cs
+Assets\Scripts\SteeveLC\Core\Data\ScriptableObject\ObjectData.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\DataEvents\DataTransferEvent.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\DataEvents\DataTransferEventListner.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\DataEvents\DataTransferResponse.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\GameEvents\GameEvent.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\GameEvents\GameEventListener.cs
+Assets\Scripts\SteeveLC\Core\Monobehaviour\Object\ObjectBehaviour.cs
+Assets\Scripts\SteeveLC\Engine\GameEventEditor.cs
 Assets\Scripts\WordGrabNShoot.cs
+Assets\Scripts\WordLocalisator.cs
 Assets\Scripts\WordManager.cs

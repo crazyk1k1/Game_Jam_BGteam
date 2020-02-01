@@ -306,5 +306,5 @@ Assets\Scripts\SteeveLC\Core\Monobehaviour\Events\GameEvents\GameEventListener.c
 Assets\Scripts\SteeveLC\Core\Monobehaviour\Object\ObjectBehaviour.cs
 Assets\Scripts\SteeveLC\Engine\GameEventEditor.cs
 Assets\Scripts\WordGrabNShoot.cs
+Assets\Scripts\WordLocalisator.cs
 Assets\Scripts\WordManager.cs
-Assets\Scripts\WorLocalisator.cs
