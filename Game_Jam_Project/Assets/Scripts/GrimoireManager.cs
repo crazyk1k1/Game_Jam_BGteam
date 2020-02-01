@@ -8,12 +8,24 @@ public class GrimoireManager : MonoBehaviour
     public GameObject pageD;
     public GameObject Grimoire;
 
-    public Sprite[] pagesImcompleteSprite;
-    public Sprite[] pagesCompleteSprite;
+    public PageData BatonG;
+    public PageData BatonD;
+    public PageData StoneG;
+    public PageData StoneD;
+    public PageData MaisonG;
+    public PageData MaisonD;
+    public PageData RituelG;
+    public PageData RituelD;
 
-    private int indexPageI;
-    private int indexPageC;
-    private int indexButtonInput;
+    /*public Sprite[] pagesImcompleteSprite;
+    public Sprite[] pagesCompleteSprite;*/
+
+    private int indexPageG;
+    private int indexPageBaton;
+    private int indexPageStone;
+    private int indexPageMaison;
+    private int indexPageRituel;
+    
 
     public static GrimoireManager s_Singleton;
 
@@ -44,6 +56,7 @@ public class GrimoireManager : MonoBehaviour
             Grimoire.SetActive(!Grimoire.activeSelf);
         }
 
+        
         /*if(indexButtonInput > 3)
         {
             indexButtonInput = 3;
@@ -55,18 +68,69 @@ public class GrimoireManager : MonoBehaviour
         }*/
     }
 
-    /*public void NextPage()
+    public void NextPage()
     {
-        indexButtonInput++;
+        indexPageG++;
+        if(indexPageG > pageG.GetComponent<PageBehaviour>().listPageLength)
+        {
+            indexPageG = pageG.GetComponent<PageBehaviour>().listPageLength;
+        }
+        pageG.GetComponent<PageBehaviour>().CurrentObject(indexPageG);
+        pageD.GetComponent<PageBehaviour>().CurrentObject(indexPageG);
+        Debug.Log("Next");
+        Debug.Log(indexPageG);
     }
 
     public void PreviousPage()
     {
-        indexButtonInput--;
+        indexPageG--;
+        if (indexPageG < 0)
+        {
+            indexPageG = 0;
+        }
+        pageG.GetComponent<PageBehaviour>().CurrentObject(indexPageG);
+        pageD.GetComponent<PageBehaviour>().CurrentObject(indexPageG);
+        Debug.Log("Previous");
+        Debug.Log(indexPageG);
     }
 
-    private void ModifPage()
+    public void BatonLvPageComplete()
     {
+        if (indexPageBaton > 2)
+        {
+            indexPageBaton = 2;
+        }
+        BatonG.ChangeImage(indexPageBaton);
+        BatonD.ChangeImage(indexPageBaton);
+    }
 
-    }*/
+    public void StoneLvPageComplete()
+    {
+        if (indexPageStone > 2)
+        {
+            indexPageStone = 2;
+        }
+        StoneG.ChangeImage(indexPageStone);
+        StoneD.ChangeImage(indexPageStone);
+    }
+
+    public void MaisonLvPageComplete()
+    {
+        if(indexPageMaison > 2)
+        {
+            indexPageMaison = 2;
+        }
+        MaisonG.ChangeImage(indexPageMaison);
+        MaisonD.ChangeImage(indexPageMaison);
+    }
+
+    public void RituelLvPageComplete()
+    {
+        if (indexPageRituel > 2)
+        {
+            indexPageRituel = 2;
+        }
+        RituelG.ChangeImage(indexPageRituel);
+        RituelD.ChangeImage(indexPageRituel);
+    }
 }
