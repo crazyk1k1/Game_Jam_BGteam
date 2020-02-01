@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5316984421298663753}
   - component: {fileID: 4628665900345234975}
+  - component: {fileID: 6155766790082425038}
   - component: {fileID: 5316984421286860969}
   - component: {fileID: 5316984421291726985}
   - component: {fileID: 5316984421295754761}
@@ -84,11 +85,28 @@ MonoBehaviour:
   handing: 0
   targetHit: 0
   resetWord: 0
-  shootForce: 40
+  shootForce: 20
   words: []
-  globalWords: []
-  spawnWords: []
+  globalWords:
+  - {fileID: 0}
+  spawnWords:
+  - {fileID: 0}
   spawnShoot: {fileID: 6024159615802102400}
+--- !u!114 &6155766790082425038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316984421298826601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a143457ce7d7d43a10e69a42bae692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineKey: 117
+  word: []
+  TimeOutline: 5
 --- !u!143 &5316984421286860969
 CharacterController:
   m_ObjectHideFlags: 0
