@@ -85,7 +85,7 @@ public class WordGrabNShoot : MonoBehaviour
             GrabVerb();
         }
 
-        if(words.Count <= 0 || verbs.Count <= 0)
+        if(words.Count <= 0 && verbs.Count <= 0)
         {
             resetWord = false;
         }
@@ -136,12 +136,7 @@ public class WordGrabNShoot : MonoBehaviour
 
     public void OnTargetHit()
     {
-        if (targetHit)
-        {
-            words.Clear();
-            verbs.Clear();
-            targetHit = false;
-        }
+        
 
         if (resetWord)
         {
@@ -172,8 +167,8 @@ public class WordGrabNShoot : MonoBehaviour
             
             words.Clear();
             verbs.Clear();
-            handing = false;
             resetWord = false;
+            handing = false;
         }
     }
 

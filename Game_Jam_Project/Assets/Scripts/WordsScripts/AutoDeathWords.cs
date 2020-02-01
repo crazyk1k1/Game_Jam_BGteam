@@ -11,7 +11,6 @@ public class AutoDeathWords : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
-        player.GetComponent<WordGrabNShoot>().resetWord = false;
     }
 
     // Update is called once per frame
