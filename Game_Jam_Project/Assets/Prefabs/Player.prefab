@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1005541080
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1005541081}
-  m_Layer: 0
-  m_Name: SpawnVerbShoot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1005541081
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005541080}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.8, y: -0.17000002, z: 1.136}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3935460018821155094}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3760158013059651673
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6024159615802102400}
   m_Layer: 0
-  m_Name: SpawnWordShoot
+  m_Name: SpawnShoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,12 +23,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3760158013059651673}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -0.17000002, z: 1.136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.63, z: 1.136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3935460018821155094}
-  m_RootOrder: 0
+  m_Father: {fileID: 5316984421298663753}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5316984421298826601
 GameObject:
@@ -95,6 +65,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5316984421298663755}
+  - {fileID: 6024159615802102400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -111,22 +82,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMoving: 0
-  verbIsMoving: 0
   handing: 0
   targetHit: 0
   resetWord: 0
   shootForce: 20
   words: []
-  verbs: []
   globalWords:
-  - {fileID: 0}
   - {fileID: 0}
   spawnWords:
   - {fileID: 0}
-  spawnWordShoot: {fileID: 6024159615802102400}
-  spawnVerbShoot: {fileID: 1005541081}
-  bulletPrefab: {fileID: 466482970595466141, guid: 86a6538d500c1a34488fdb7ae5b55c6d,
-    type: 3}
+  spawnShoot: {fileID: 6024159615802102400}
 --- !u!114 &6155766790082425038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +106,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineKey: 117
   word: []
-  verb: []
   TimeOutline: 5
 --- !u!143 &5316984421286860969
 CharacterController:
@@ -411,7 +375,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineKey: 9
   word: []
-  verb: []
   TimeOutline: 3
 --- !u!1 &5316984421298826603
 GameObject:
@@ -442,8 +405,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3935460018821155094}
+  m_Children: []
   m_Father: {fileID: 5316984421298663753}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -506,35 +468,3 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5316984421298826603}
   m_Enabled: 1
---- !u!1 &7692482466702618195
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3935460018821155094}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3935460018821155094
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7692482466702618195}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 6024159615802102400}
-  - {fileID: 1005541081}
-  m_Father: {fileID: 5316984421298663755}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
