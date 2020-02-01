@@ -2,31 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WordManager : MonoBehaviour
+public class AutoDeathWords : MonoBehaviour
 {
     public GameObject player;
+    public float timer;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        player.GetComponent<WordGrabNShoot>().resetWord = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == "Sphere")
-        {
-            player.GetComponent<WordGrabNShoot>().targetHit = true;
-            Destroy(gameObject);
-        }
-
-        if (collision.gameObject.name != "Sphere")
+        timer += 1 * Time.deltaTime;
+        if(timer >= 5)
         {
             player.GetComponent<WordGrabNShoot>().resetWord = true;
             Destroy(gameObject);

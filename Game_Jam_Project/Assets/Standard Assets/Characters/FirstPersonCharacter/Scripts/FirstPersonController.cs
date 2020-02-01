@@ -156,11 +156,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_NextStep = m_StepCycle + m_StepInterval;
 
-            PlayFootStepAudio();
+            //PlayFootStepAudio();
         }
 
 
-        private void PlayFootStepAudio()
+        /*private void PlayFootStepAudio()
         {
             if (!m_CharacterController.isGrounded)
             {
@@ -174,7 +174,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             // move picked sound to index 0 so it's not picked next time
             m_FootstepSounds[n] = m_FootstepSounds[0];
             m_FootstepSounds[0] = m_AudioSource.clip;
-        }
+        }*/
 
 
         private void UpdateCameraPosition(float speed)
