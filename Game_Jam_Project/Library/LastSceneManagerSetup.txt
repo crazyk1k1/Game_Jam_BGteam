@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+sceneSetups: []
+=======
 sceneSetups:
-- path: Assets/Scenes/UIGrimoire_Scene.unity
+- path: Assets/Scenes/SteeveScenes/WorkBenchv1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
+>>>>>>> 98e7d4872daf37f6b796401a20ab616fae139549
