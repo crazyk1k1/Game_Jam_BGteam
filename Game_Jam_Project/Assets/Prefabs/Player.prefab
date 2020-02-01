@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 5316984421291726985}
   - component: {fileID: 5316984421295754761}
   - component: {fileID: 5316984421297026185}
+  - component: {fileID: 518159163}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -81,8 +82,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMoving: 0
   handing: 0
+  targetHit: 0
+  resetWord: 0
   shootForce: 40
   words: []
+  globalWords: []
+  spawnWords: []
   spawnShoot: {fileID: 6024159615802102400}
 --- !u!143 &5316984421286860969
 CharacterController:
@@ -338,6 +343,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &518159163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5316984421298826601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a143457ce7d7d43a10e69a42bae692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineKey: 9
+  word: []
+  TimeOutline: 3
 --- !u!1 &5316984421298826603
 GameObject:
   m_ObjectHideFlags: 0
