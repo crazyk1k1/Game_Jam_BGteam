@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/SteeveScenes/WorkBenchv1.unity
+=======
+- path: Assets/Scenes/Area51_LD_v1.unity
+>>>>>>> 858af1ae09534727dd708d7d3645a405c95208ca
   isLoaded: 1
   isActive: 1
   isSubScene: 0
