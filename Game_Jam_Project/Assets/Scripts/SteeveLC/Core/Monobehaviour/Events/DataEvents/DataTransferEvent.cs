@@ -11,10 +11,10 @@ public class DataTransferEvent : ScriptableObject
     private readonly List<DataTransferEventListner> eventListeners = 
         new List<DataTransferEventListner>();
 
-        [HideInInspector]public  GameObject dataCarried; // CHANGER ICI LE TYPE DE DATA 2/3
+        public  int dataCarried; // CHANGER ICI LE TYPE DE DATA 2/3
 
 
-    public void Raise(GameObject dataTransfer) // CHANGER ICI LE TYPE DE DATA 3/3
+    public void Raise(int dataTransfer) // CHANGER ICI LE TYPE DE DATA 3/3
     {
         dataCarried = dataTransfer;
         for(int i = eventListeners.Count -1; i >= 0; i--)
