@@ -3875,7 +3875,7 @@ ParticleSystem:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 4
-    maxLights: 150
+    maxLights: 175
   TrailModule:
     enabled: 0
     mode: 0
