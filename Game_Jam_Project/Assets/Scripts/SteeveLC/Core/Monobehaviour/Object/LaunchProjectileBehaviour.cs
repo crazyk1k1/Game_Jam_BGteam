@@ -29,6 +29,14 @@ public class LaunchProjectileBehaviour : MonoBehaviour
         yield return null;
     }
 
+    private void Update() 
+    {
+       if(!projectileFired)
+       {
+           transform.position = socket.position;
+           transform.rotation = socket.rotation;
+       } 
+    }
 
     public void AddWord()
     {
@@ -44,11 +52,16 @@ public class LaunchProjectileBehaviour : MonoBehaviour
 
     public void launchProtocol()
     {
+        if(projectileFired == false)
+        {
         projectileFired = true;
         resetAlready = false;
         wordAbsorbed.GetComponent<ObjectBehaviour>().HideWord();
-        gameObject.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * launchForce, ForceMode.Impulse);
+        transform.position = socket.position;
+        transform.rotation = socket.rotation;
+        gameObject.GetComponent<Rigidbody>().AddForce(socket.forward * launchForce, ForceMode.Impulse);
         StartCoroutine(resetcoroutine());
+        }
     }
 
     void ResetProtocol()

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05622e42a21c48045a85647947d0c55d, type: 3}
+  m_Name: Page0_Couverture
+  m_EditorClassIdentifier: 
+  currentPage:
+    pageName: Couverture_Depart
+    pagetext: 
+    pageIllustration: {fileID: 21300000, guid: b602dc8f01beeeb4085c3136f9c24c4c, type: 3}
+  PageVersions:
+  - pageName: Couverture_Depart
+    pagetext: 
+    pageIllustration: {fileID: 21300000, guid: b602dc8f01beeeb4085c3136f9c24c4c, type: 3}
+  - pageName: Couverture_Final
+    pagetext: "Once upon a time, there was a man and his son, \r\n\r\nA powerful druid,
+      feared by more than one, \r\n\r\nWinter was rought and death had come,\r\n\r\nBut
+      not in a manner expected by anyone."
+    pageIllustration: {fileID: 0}
+  currentversion: 0

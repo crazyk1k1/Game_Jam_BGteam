@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05622e42a21c48045a85647947d0c55d, type: 3}
+  m_Name: Page1_Potion
+  m_EditorClassIdentifier: 
+  currentPage:
+    pageName: Page3_Start
+    pagetext: 
+    pageIllustration: {fileID: 21300000, guid: b602dc8f01beeeb4085c3136f9c24c4c, type: 3}
+  PageVersions:
+  - pageName: Page3_Start
+    pagetext: 
+    pageIllustration: {fileID: 21300000, guid: b602dc8f01beeeb4085c3136f9c24c4c, type: 3}
+  - pageName: Page3_AfterPuzzle2
+    pagetext: "A cursed potion, for a dark ordeal\r\n\r\nA fear of starvation, for
+      his son, not for him, \r\n\r\nPushed a contract to be signed with a devil in
+      golden attires.\r\n\r\nAnd death was given, but not the expected one."
+    pageIllustration: {fileID: 21300000, guid: cdc93c2c62018f34b9f55ad0dbf6bca2, type: 3}
+  - pageName: Page3_AfterPuzzle3
+    pagetext: "As guided by changing winds fate can be, \r\n\r\nThere are events even
+      Gods can not alter,\r\n\r\nDeath claimed the only life mattering to him,\r\n\r\nWhich
+      once discovered brought a sorrow that could have ended it all.  "
+    pageIllustration: {fileID: 21300000, guid: 468753eb475b5ea4294dee0000f33ce5, type: 3}
+  - pageName: Page3_Final
+    pagetext: "From a fear of starvation, a vow was broken\r\n\r\nAnd a dark ordeal
+      accepted that noone should have taken\r\n\r\nA poison brewed for a golden crown,
+      but drank by a son, \r\n\r\nin complete confusion, thinking it was but a fortyfing
+      potion."
+    pageIllustration: {fileID: 21300000, guid: 468753eb475b5ea4294dee0000f33ce5, type: 3}
+  currentversion: 0

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05622e42a21c48045a85647947d0c55d, type: 3}
+  m_Name: Page2_House
+  m_EditorClassIdentifier: 
+  currentPage:
+    pageName: page Start
+    pagetext: 
+    pageIllustration: {fileID: 0}
+  PageVersions:
+  - pageName: page Start
+    pagetext: 
+    pageIllustration: {fileID: 0}
+  - pageName: Page2_AfterPuzzle3
+    pagetext: "A vision of sorrow, the heart of this world tourment.\r\n\r\nThe Discovery
+      of a cold body, the only one he wished not to,\r\n\r\nCreated a crossroad with
+      paths leading either to an end or a new start.\r\n\r\nBut peace must be reached
+      within self first, by lying to rest what must. "
+    pageIllustration: {fileID: 0}
+  - pageName: Page2_Final
+    pagetext: "A piece of soul was gone to early, no pain can match what it must be.\r\n\r\nA
+      single inattention, and a fate was sealed,\r\n\r\nIn the weight of the guilt
+      lies the true trial.\r\n\r\nAnd so starts the battle between two endings."
+    pageIllustration: {fileID: 0}
+  currentversion: 0
