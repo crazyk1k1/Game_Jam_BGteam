@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05622e42a21c48045a85647947d0c55d, type: 3}
+  m_Name: Page4_Stick
+  m_EditorClassIdentifier: 
+  currentPage:
+    pageName: Page4_Start
+    pagetext: "What was once but a symbol of power, the link of balance between two
+      realms,\n \r\nWas now as broken as a vow so long ago taken,\r\n\r\nA world fated
+      to doom, no hope to be seen, \r\n\r\nAn end before time to a story now lost
+      to sorrow."
+    pageIllustration: {fileID: 21300000, guid: 08734106f258fd84294f199e0c6bdf35, type: 3}
+  PageVersions:
+  - pageName: Page4_Start
+    pagetext: "What was once but a symbol of power, the link of balance between two
+      realms,\n \r\nWas now as broken as a vow so long ago taken,\r\n\r\nA world fated
+      to doom, no hope to be seen, \r\n\r\nAn end before time to a story now lost
+      to sorrow."
+    pageIllustration: {fileID: 21300000, guid: 08734106f258fd84294f199e0c6bdf35, type: 3}
+  - pageName: Page4_AfterPuzzle1
+    pagetext: "A gleam of hope started to appear, as this might not be fated just
+      yet. \r\n\r\nThe symbol was still whole, despite the event that had shaken its
+      core.\r\n\r\nMight it be mercy from the God Dagda or an intervention from elsewhere
+      ?\r\n\r\nThe destiny of the World might still hold more to tell. "
+    pageIllustration: {fileID: 21300000, guid: 65d0517172eef934f9a80ac2ba566fd3, type: 3}
+  - pageName: page4_Final
+    pagetext: "Right in time, the rite was canceled and peace was finnaly restored.\r\n\r\nThe
+      druid and his world was no longer doomed, and \r\n\r\nA tale yet to be continued,
+      maybe not even by this one\r\n\r\nAs a world cannot be reduce to the life of
+      a single one."
+    pageIllustration: {fileID: 21300000, guid: 65d0517172eef934f9a80ac2ba566fd3, type: 3}
+  currentversion: 0

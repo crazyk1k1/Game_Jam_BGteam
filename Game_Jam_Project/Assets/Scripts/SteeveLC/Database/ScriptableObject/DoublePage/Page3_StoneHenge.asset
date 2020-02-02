@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05622e42a21c48045a85647947d0c55d, type: 3}
+  m_Name: Page3_StoneHenge
+  m_EditorClassIdentifier: 
+  currentPage:
+    pageName: Page3_Start
+    pagetext: 
+    pageIllustration: {fileID: 0}
+  PageVersions:
+  - pageName: Page3_Start
+    pagetext: 
+    pageIllustration: {fileID: 0}
+  - pageName: Page3_beforePuzzle2
+    pagetext: "Desacrated, the place was no longer this circular sight of beauty,
+      \r\n\r\nClouded by a dark ritual powered by a vengeanceful druid, \r\n\r\nA
+      clear sky reaching up to the stars was yet to be seen once again\r\n\r\nAs it
+      just might be the last depending on the Gods response to his wrath"
+    pageIllustration: {fileID: 21300000, guid: 21bd1e456efbb434fa1b67182f40df4e, type: 3}
+  - pageName: Page3_AfterPuzzle2
+    pagetext: "The site was standing despite his best efforts,\r\n\r\nWas it a lack
+      of resolve or a change of heart ?\r\n\r\nWhile uncertain, the air felt lighter.\r\n\r\nWas
+      it a shallow whim or something deeper ?\r\n"
+    pageIllustration: {fileID: 21300000, guid: 70ae48e307e817e469fc6138a4020a5e, type: 3}
+  - pageName: Page3_Final
+    pagetext: "Despair made him rush the strongest stone cast that he could, \r\n\r\nHis
+      though still clouded by sorrow, he started what no one should.\r\n\r\nClose
+      to bring an end to his world, it was a simple though that saved us all.\r\n\r\nThe
+      sight of stones shapped like a grave, the one on which he spent so much grief
+      and pain. "
+    pageIllustration: {fileID: 21300000, guid: 70ae48e307e817e469fc6138a4020a5e, type: 3}
+  currentversion: 0

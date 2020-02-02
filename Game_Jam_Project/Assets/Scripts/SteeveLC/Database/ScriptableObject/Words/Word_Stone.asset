@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75c97e5f9453bc642a574b42fe7c5741, type: 3}
-  m_Name: Roche
+  m_Name: Word_Stone
   m_EditorClassIdentifier: 
   objectType: {fileID: 11400000, guid: 1b5c471b619352d4a8bc7ff7b0131047, type: 2}
-  objectString: Roche
+  objectString: Stone

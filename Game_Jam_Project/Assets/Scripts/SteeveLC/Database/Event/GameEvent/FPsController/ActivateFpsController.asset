@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75c97e5f9453bc642a574b42fe7c5741, type: 3}
-  m_Name: New Object Data
+  m_Script: {fileID: 11500000, guid: 253a6fae6c41d0241a1074c1c60eb585, type: 3}
+  m_Name: ActivateFpsController
   m_EditorClassIdentifier: 
-  objectType: {fileID: 11400000, guid: 7d4b3c8ac1a1640429ff02938b83ae5d, type: 2}
-  objectString: Rocher
